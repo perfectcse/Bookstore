@@ -1,0 +1,89 @@
+/* Container */
+.home-container {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== HERO SECTION ===== */
+.home-hero {
+  height: 300px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay for readability */
+.home-hero-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hero text */
+.home-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.home-subtitle {
+  color: #dddddd;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* ===== SEARCH ===== */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+/* ===== GRID ===== */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 28px;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+  margin-top: 60px;
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+}
+
+/* ===== LOADER ===== */
+.loader-wrapper {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* ===== ANIMATION (smooth UI) ===== */
+.book-grid > * {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

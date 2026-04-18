@@ -1,0 +1,22 @@
+/* App wrapper */
+#root {
+  min-height: 100vh;
+}
+
+/* Optional global alignment */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Smooth font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
